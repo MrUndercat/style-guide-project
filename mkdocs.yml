@@ -1,0 +1,50 @@
+site_name: Стайлгайд по оформлению задач в Jira
+site_description: Правила написания и оформления задач в Jira
+site_author: MrUndercat
+site_url: https://mrundercat.github.io/style-guide-project/
+repo_url: https://github.com/MrUndercat/style-guide-project
+repo_name: MrUndercat/style-guide-project
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Тёмная тема
+    - scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Светлая тема
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+nav:
+  - Главная: index.md
+  - Стиль изложения: style.md
+  - Орфография и пунктуация: spelling.md
+  - Оформление текста: formatting.md
+  - Правила работы с Markdown: markdown.md
+  - Шаблоны: templates.md
+  - Точечные рекомендации: tips.md
+  - Словари и глоссарии: glossary.md
+  - Тестирование стайлгайда: testing.md
